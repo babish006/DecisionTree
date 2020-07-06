@@ -14,5 +14,5 @@ kmeans = KMeans(n_clusters=k, precompute_distances="auto", n_jobs=-1)
 df['Clusters'] = kmeans.fit_predict(x)
 value = df.values.tolist()
 print(Counter(kmeans.labels_))
-#print(df)
+print(df)
 
